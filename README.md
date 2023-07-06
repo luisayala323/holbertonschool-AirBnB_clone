@@ -1,4 +1,4 @@
-![Banner](home/luis/Dowloads/Black Minimalist Content Creator LinkedIn Banner.gif)
+![Banner](home/luis/Dowloads/Banner.gif)
 
 # Holberton School Airbnb clone
 
