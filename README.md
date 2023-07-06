@@ -1,4 +1,4 @@
-# Holberton School Airbnb clone)
+# Holberton School Airbnb clone
 
 ## Console?
 
