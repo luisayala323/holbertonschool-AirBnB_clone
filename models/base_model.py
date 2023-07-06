@@ -14,7 +14,7 @@ class BaseModel:
     methods for other classes:
     """
 
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         """
         Initialize instance attributes
             Attrs:
@@ -22,9 +22,14 @@ class BaseModel:
                 created_at: date of instance creation
                 updated_at: date of instance attrs change
         """
-        self.id = str(uuid4())
-        self.created_at = datetime.now()
-        self.updated_at = self.created_at
+        if kwargs:
+            for keys in kwargs:
+                if keys != __class__:
+                    self.__dict__[keys] = kwargs[keys]
+        else:
+            self.id = str(uuid4())
+            self.created_at = datetime.now()
+            self.updated_at = self.created_at
 
     def __str__(self):
         """
