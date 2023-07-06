@@ -1,4 +1,4 @@
-![](file:///home/luis/Downloads/Banner.gif)
+![](https://github.com/Adrianmorales21/holbertonschool-AirBnB_clone/blob/master/Banner.gif)
 
 # Holberton School Airbnb clone
 
