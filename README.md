@@ -1,4 +1,4 @@
-![Banner](home/luis/Dowloads/Banner.gif)
+![](file:///home/luis/Downloads/Banner.gif)
 
 # Holberton School Airbnb clone
 
