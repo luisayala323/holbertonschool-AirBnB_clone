@@ -40,6 +40,15 @@ After executing The Console, you can use it with the following commands:
 
 ## Example of commands:
 
+<p align=center>
+<img src="https://user-images.githubusercontent.com/114013753/220426469-a0fe7e70-24ee-44a0-b4c4-b158298d3a0f.png" width=50%/>
+  
+<img src="https://user-images.githubusercontent.com/114013753/220478284-e4794a96-f179-4981-be51-b752acd7e75d.png" width=50%/>
+
+<img src="https://user-images.githubusercontent.com/114013753/220478497-d9fd8672-9edd-454b-9bda-b929ae6f6793.png" width=50%/>
+
+<img src="https://user-images.githubusercontent.com/114013753/220478733-b3cce567-e807-4f7f-aa61-5fe38a52e8dc.png" width=50%/>
+
 ## Developers
 
 [Luis Ayala](https://github.com/luisayala323) & [Adrian Morales](https://github.com/Adrianmorales21)
