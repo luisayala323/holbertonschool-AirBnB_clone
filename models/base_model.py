@@ -2,54 +2,56 @@
 """
 BaseModel class module
 """
-
+from models import storage
 from uuid import uuid4
 from datetime import datetime
 
 
 class BaseModel:
-
     """
-    Defines all common attributes/
-    methods for other classes:
+    Defines all common attributes/methods for other classes.
     """
 
     def __init__(self, *args, **kwargs):
         """
-        Initialize instance attributes
-            Attrs:
-                id (str): instance identity
-                created_at: date of instance creation
-                updated_at: date of instance attrs change
+        Initializes instance attributes.
+        If it's a new instance, calls the new(self) method on storage.
         """
         if kwargs:
-            for keys in kwargs:
-                if keys != __class__:
-                    self.__dict__[keys] = kwargs[keys]
+            for key, value in kwargs.items():
+                if key != '__class__':
+                    if key == 'created_at' or key == 'updated_at':
+                        value = datetime.strptime(
+                            value, "%Y-%m-%dT%H:%M:%S.%f")
+                    setattr(self, key, value)
         else:
             self.id = str(uuid4())
             self.created_at = datetime.now()
             self.updated_at = self.created_at
-
-    def __str__(self):
-        """
-        Returns string representation of instance
-        """
-        return f"[{self.__class__.__name__}] ({self.id}){self.__dict__}"
+            # Call the new(self) method on storage for new instances
+            storage.new(self)
 
     def save(self):
         """
-        Actualize time of instance attributes(time & date)
+        Actualizes the time of instance attributes (time & date).
+        Calls the save(self) method of storage.
         """
         self.updated_at = datetime.now()
+        storage.save()
 
     def to_dict(self):
         """
         Returns a dictionary containing all keys/values
-        of __dict__ of the instance including new attrs
+        of __dict__ of the instance including new attrs.
         """
         obj_dict = self.__dict__.copy()
         obj_dict['__class__'] = self.__class__.__name__
         obj_dict['created_at'] = self.created_at.isoformat()
         obj_dict['updated_at'] = self.updated_at.isoformat()
         return obj_dict
+
+    def __str__(self):
+        """
+        Returns a string representation of the instance.
+        """
+        return "[{}] ({}){}".format(self.__class__.__name__, self.id, self.__dict__)
