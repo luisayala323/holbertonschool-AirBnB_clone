@@ -16,6 +16,8 @@ The Console is the tool to validate this storage engine
 
 ## Description:
 
+This repository includes the first stage of Holberton School project that consist on creating a simple and limited version of the Airbnb website. This stage consist on creating the console, also known as the command interpreter, which will allow us to manage the objects for our project through a command-line interface.
+
 ## How to start it?
 
 To use The Console you need to clone this repository to your local machine, using the following command:
