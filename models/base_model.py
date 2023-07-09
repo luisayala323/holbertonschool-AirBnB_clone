@@ -2,7 +2,6 @@
 """
 BaseModel class module
 """
-from models import storage
 from uuid import uuid4
 from datetime import datetime
 
@@ -28,6 +27,7 @@ class BaseModel:
                             value, "%Y-%m-%dT%H:%M:%S.%f")
                     setattr(self, key, value)
         else:
+            from models import storage
             storage.new(self)
 
     def save(self):
@@ -36,6 +36,7 @@ class BaseModel:
         Calls the save(self) method of storage.
         """
         self.updated_at = datetime.now()
+        from models import storage
         storage.save()
 
     def to_dict(self):
