@@ -27,16 +27,16 @@
 
 Here's a simple example of an HTML page:
 
-<!DOCTYPE html>
-<html>
-<head>
-<title>My First Webpage</title>
-</head>
-<body>
-<h1>Hello, World!</h1>
-<p>This is my first webpage.</p>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>My First Webpage</title>
+    </head>
+    <body>
+    <h1>Hello, World!</h1>
+    <p>This is my first webpage.</p>
+    </body>
+    </html>
 
 3.  Markup language uses tags or codes to annotate a document's structure and content. HTML is a prime example, defining the structure and content of webpages for web browsers to interpret and display.
 
@@ -57,7 +57,7 @@ Here's a simple example of an HTML page:
 
 8.  CSS stands for Cascading Style Sheets. It is a stylesheet language used to control the presentation and layout of HTML documents. With CSS, you can apply styles such as colors, fonts, margins, padding, and positioning to elements on a webpage. CSS allows you to separate the document's content (HTML) from its presentation (styling), making it easier to maintain and update the design.
 
-9.            You can add styles to an element using CSS. There are multiple ways to apply styles, but the most common is by using the style attribute directly in the HTML element.
+9.  You can add styles to an element using CSS. There are multiple ways to apply styles, but the most common is by using the style attribute directly in the HTML element.
 
 Example:
 
@@ -72,18 +72,19 @@ HTML:
 <p class="highlighted-text">This text will have special styling.</p>
 
 CSS:
-.highlighted-text {
-color: red;
-font-weight: bold;
-}
+
+    .highlighted-text {
+    color: red;
+    font-weight: bold;
+    }
 
 11. In CSS, a selector is a pattern that is used to select and target specific HTML elements to apply styles. Selectors can be based on element names, class names, IDs, attributes, and more. CSS rules consist of selectors followed by curly braces {} that contain the styles to be applied to the selected elements.
 
 Example:
 
-p {
-color: blue;
-}
+    p {
+    color: blue;
+    }
 
 12. To compute CSS specificity:
 
