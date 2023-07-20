@@ -65,19 +65,6 @@ Example:
 
 10. A class in CSS is a reusable identifier that allows you to apply styles to multiple elements without having to repeat the styles for each element individually. You can assign a class to an HTML element using the class attribute. Then, in your CSS stylesheet, you define the styles for that class, and any element with that class will inherit those styles.
 
-Example:
-
-HTML:
-
-<p class="highlighted-text">This text will have special styling.</p>
-
-CSS:
-
-    .highlighted-text {
-    color: red;
-    font-weight: bold;
-    }
-
 11. In CSS, a selector is a pattern that is used to select and target specific HTML elements to apply styles. Selectors can be based on element names, class names, IDs, attributes, and more. CSS rules consist of selectors followed by curly braces {} that contain the styles to be applied to the selected elements.
 
 Example:
